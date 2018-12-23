@@ -33,7 +33,7 @@ form
 .form-control
 {
    width: 600px;
-   background: transparent;
+   background-color: transparent;
    border: none;
    outline: none;
    border-bottom: 1px solid gray:
@@ -48,7 +48,7 @@ input{
 
 form .Submit
 {
-  background: #ff5722;
+  background-color: #ff5722;
   border-color: transparent;
   color: #fff;
   font-size: px;
@@ -65,5 +65,5 @@ form .Submit
 form .submit:hover
 {
    background-color: #f44336;
-   cursor: pointer;  
+   cursor: pointer;
 }
