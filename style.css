@@ -32,7 +32,7 @@ form
 
 .form-control
 {
-   width: 600px;
+   width: 300px;
    background-color: rgba(0,0,0,0.5); // sets to 50% transparent
    border: none;
    outline: none;
