@@ -1,4 +1,5 @@
 <?php
+
     $name = $_POST['name'];
     $visitor_email = $_POST['Email'];
     $message = $_POST['message'];
@@ -11,8 +12,7 @@
                    "User Email: $visitor_email.\n".
                       "User Message: $message_email.\n";
 
-
-    $to = "kaykyungahwoo@gmail.com";
+    $to = "justinhyun@yahoo.com";
 
     $headers = "From: $email_from \r\n";
 
