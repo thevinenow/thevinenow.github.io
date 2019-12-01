@@ -155,7 +155,8 @@
               <div class="p-5">
             <!-- <h2 class="text-white">Contact Us!</h2>
                   <h3 class="text-white"> Please send  your inquiry to kaykyungahwoo@gmail.com</h3>-->
-                     <h2 class="left-align"> Contact Us! </h2>
+
+            <!--           <h2 class="left-align"> Contact Us! </h2>
                   <h3 class="left-align"> Please send  your inquiry to kaykyungahwoo@gmail.com </h3>
                   <p class=" left-align text-maincolor margin-top-20">
                   </div>
@@ -165,8 +166,8 @@
 
             <div class="col-md-6">
               <div>
-                <!--<form action="/contact-form-handler.php">-->
-                <form action="https://formspree.io/kaykyungahwoo@gmail.com" method="POST">
+                <!<form action="/contact-form-handler.php">-->
+              <!--    <form action="https://formspree.io/kaykyungahwoo@gmail.com" method="POST">
               	  <input class="input-box" type="text" id = "full-name" placeholder="Full Name">
               	    <input class="input-box" type="text" type="email" id = "email-address" name="_replyto" placeholder="Email">
               	  <input class="input-box" type="text" type="subject" placeholder="Subject">
@@ -176,6 +177,37 @@
               	</form>
               </div>
             </div>-->
+            <h1>Contact us</h1>
+            <form method="POST" name="contactform" action="contact-form-handler.php">
+            <p>
+            <label for='name'>Your Name:</label> <br>
+            <input type="text" name="name">
+            </p>
+            <p>
+            <label for='email'>Email Address:</label> <br>
+            <input type="text" name="email"> <br>
+            </p>
+            <p>
+            <label for='message'>Message:</label> <br>
+            <textarea name="message"></textarea>
+            </p>
+            <input type="submit" value="Submit"><br>
+            </form>
+
+            <script language="JavaScript">
+            // Code for validating the form
+            // Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+            // for details
+            var frmvalidator  = new Validator("contactform");
+            frmvalidator.addValidation("name","req","Please provide your name");
+            frmvalidator.addValidation("email","req","Please provide your email");
+            frmvalidator.addValidation("email","email","Please enter a valid email address");
+            </script>
+            <!--
+            Sample code from:
+            http://www.html-form-guide.com/contact-form/php-email-contact-form.html
+            -->
+
 
     </section>
 
